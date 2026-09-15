@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>[Your Name] — Student Profile</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Profile site for a student seeking internships / working student positions.">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="#home" class="logo">[Your Name]</a>
+      </div>
+      <nav class="nav" id="site-nav" aria-label="Main navigation">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#education">Education</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#experience">Experience</a>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero container">
+      <div class="hero-left">
+        <h1 class="name">Your Full Name</h1>
+        <p class="title">Computer Science Student • Seeking Internships & Working Student Roles</p>
+        <p class="summary">
+          Concise one-line pitch: motivated CS student with interest in web development, data science, and software engineering. Open to internships and working-student positions.
+        </p>
+
+        <div class="skills">
+          <span class="skill">JavaScript</span>
+          <span class="skill">React</span>
+          <span class="skill">Python</span>
+          <span class="skill">SQL</span>
+          <span class="skill">Git</span>
+        </div>
+
+        <div class="cta-row">
+          <a class="btn primary" href="#experience">View CV</a>
+          <a class="btn outline" href="resume.pdf" download>Download Resume</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <!-- Replace profile.jpg with your photo; keep same filename or update src. -->
+        <img class="profile-photo" src="profile.jpg" alt="Profile photo of Your Name">
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section container">
+      <h2>Education</h2>
+      <div class="edu-grid">
+        <article class="edu-card">
+          <h3>University Name</h3>
+          <p class="meta">B.Sc. Computer Science — Expected 2027</p>
+          <ul>
+            <li>Relevant coursework: Algorithms, Data Structures, Databases, Web Development</li>
+            <li>GPA: 3.8 / 4.0 (or leave out if you prefer)</li>
+            <li>Activities: Programming Club, Hackathons</li>
+          </ul>
+        </article>
+
+        <article class="edu-card">
+          <h3>Previous School (optional)</h3>
+          <p class="meta">High School Diploma — 2023</p>
+          <ul>
+            <li>Achievements: [Scholarship / Award]</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>Project One — Web App</h3>
+          <p class="meta">React • Node.js • PostgreSQL</p>
+          <p>Short summary describing the project, your role, and impact (e.g., "Built an expense tracker used by 100+ users").</p>
+          <div class="project-links">
+            <a href="#" target="_blank">Live</a>
+            <a href="#" target="_blank">Source</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>Project Two — Data Analysis</h3>
+          <p class="meta">Python • Pandas • Jupyter</p>
+          <p>Short summary: dataset, approach, and insights found.</p>
+          <div class="project-links">
+            <a href="#" target="_blank">Report</a>
+            <a href="#" target="_blank">Source</a>
+          </div>
+        </article>
+
+        <!-- Add more projects as needed -->
+      </div>
+    </section>
+
+    <!-- EXPERIENCE / INTERNSHIPS -->
+    <section id="experience" class="section container">
+      <h2>Internship & Work Experience</h2>
+
+      <article class="exp-card">
+        <div class="exp-head">
+          <div>
+            <h3>Company Name — Software Engineering Intern</h3>
+            <p class="meta">Summer 2025 • City, Country</p>
+          </div>
+          <div class="exp-badge">Internship</div>
+        </div>
+        <ul>
+          <li>Worked on feature X using React and TypeScript; improved performance by 20%.</li>
+          <li>Implemented REST API endpoints and wrote unit tests.</li>
+          <li>Collaborated with a team of 4 engineers and participated in code reviews.</li>
+        </ul>
+      </article>
+
+      <article class="exp-card">
+        <div class="exp-head">
+          <div>
+            <h3>Small Startup — Student Developer</h3>
+            <p class="meta">2024–2025 • Remote</p>
+          </div>
+          <div class="exp-badge">Working Student</div>
+        </div>
+        <ul>
+          <li>Maintained the company website, added analytics and automated deployment.</li>
+          <li>Reduced bug backlog and improved documentation for new hires.</li>
+        </ul>
+      </article>
+
+      <section class="cv-content">
+        <h3>CV Snapshot</h3>
+        <p><strong>Contact:</strong> your.email@example.com · +49 123 456 789 · <a href="#">LinkedIn</a> · <a href="#">GitHub</a></p>
+        <p><strong>Summary:</strong> Brief CV summary paragraph about your strengths and interests.</p>
+        <p><strong>Skills:</strong> JavaScript, React, Node.js, Python, SQL, Git, Agile</p>
+        <!-- Add more CV sections (awards, languages, certifications) as needed -->
+      </section>
+    </section>
+
+    <footer class="site-footer container">
+      <p>© <span id="year"></span> Your Name — Open to internships & working student positions • <a href="mailto:your.email@example.com">Email me</a></p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
